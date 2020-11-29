@@ -44,7 +44,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authenticationEntryPoint(authenticationEntryPoint)
                 .and()
             .formLogin()
-                .loginProcessingUrl("/login").permitAll()
+                .loginProcessingUrl("/api/admin/login").permitAll()
                 .successHandler(successHandler)
                 .and()
             .logout()
